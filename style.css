@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 200vh;
+    height: 100vh; 
+    
+     background: linear-gradient(320deg,  #088ae6,  #bd1c64b9,  #132dda);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif; 
+}
+.calculator{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius:10px ;
+    background: transparent;
+    box-shadow: 0px 10px 15px rgb(223, 247, 10);
+    background:  rgba(65, 131, 230, 0.034);
+   
+    
+
+
+}
+input{
+    width: 310px;
+    padding: 30px;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;  
+    border-radius: 10px; 
+    border-color: #33691E;
+    color:black;
+    box-shadow: 0px 5px 15px rgb(227, 231, 7);
+
+    
+
+
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: 0px 5px 15px rgb(227, 231, 7);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+button:hover{
+    background:linear-gradient(190deg,rgba(0, 0, 255, 0.705),rgba(255, 0, 0, 0.87));
+}
+
+.equals{
+    background-color: rgba(128, 0, 128, 0.158);
+}
+
+.item-operator{
+    background-color: #ffffffbe;
+    color: #000;
+}
+.operator{
+    background-color: #ffffff18;
+}
+.num{
+    background-color: #ffffff5b;
+}
+input::placeholder{
+    color :black;
+}
+
+
+
+
+
+
+    
+

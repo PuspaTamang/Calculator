@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+    <input type="text" placeholder="0" id="result">
+    <div> 
+        <button  onclick="btnClear()"class="operator">AC</button>
+        <button  onclick="btnDelete()"  class="operator">DEL</button>
+        <button  onclick="btnClick('%')"class="operator">%</button>
+        <button  onclick="btnClick('/')"class="item-operator">/</button>
+    </div>
+    <div> 
+        <button onclick="btnClick('7')" class="num">7</button>
+        <button onclick="btnClick('8')" class="num">8</button>
+        <button onclick="btnClick('9')" class="num">9</button>
+        <button onclick="btnClick('*')" class="item-operator">*</button>
+    </div>
+    <div> 
+        <button onclick="btnClick('4')" class="num">4</button>
+        <button onclick="btnClick('5')" class="num">5</button>
+        <button onclick="btnClick('6')" class="num">6</button>
+        <button onclick="btnClick('-')" class="item-operator">-</button>
+    </div>
+    <div> 
+        <button onclick="btnClick('1')" class="num">1</button>
+        <button onclick="btnClick('2')" class="num">2</button>
+        <button onclick="btnClick('3')" class="num">3</button>
+        <button onclick="btnClick('+')" class="item-operator">+</button>
+    </div>
+    <div> 
+        <button onclick="btnClick('0')" class="num">0</button>
+        <button onclick="btnClick(',')" class="num">,</button>
+        <button onclick="btnClick('.')" class="num">.</button>
+        <button onclick="btnResult()" class="equals">=</button>
+    </div>
+</div>
+<script>
+    function btnClick(val){
+        document.getElementById("result").value+=val;
+
+    }
+    function btnDelete(){
+        document.getElementById("result").value=document.getElementById("result").value.slice(0,-1);
+        
+    }
+    function btnClear(){
+        document.getElementById("result").value="";
+    }
+    function btnResult(){
+        document.getElementById("result").value=eval( document.getElementById("result").value);
+    }
+</script>
+</body>
+</html>
